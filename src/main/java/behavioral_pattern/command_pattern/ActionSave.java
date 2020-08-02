@@ -1,0 +1,12 @@
+package behavioral_pattern.command_pattern;
+
+public class ActionSave implements ActionListenerCommand {
+	private Document doc;
+	public ActionSave(Document doc) {
+		this.doc = doc;
+	}
+	
+	public void execute() {
+		doc.save();
+	}
+}
