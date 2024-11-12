@@ -10,6 +10,18 @@ public class Client {
         UserDTOBuilder userDTOBuilder = new UserWebDTOBuilder();
         UserDTO userDTO = directBuild(userDTOBuilder, user);
         System.out.println(userDTO);
+
+//        inner
+        hoangnv.creational.builder.innerbuilder.UserDTO dto = directBuild(hoangnv.creational.builder.innerbuilder.UserDTO.getBuilder(), user);
+    }
+
+    //    inner Director
+    public static hoangnv.creational.builder.innerbuilder.UserDTO directBuild(hoangnv.creational.builder.innerbuilder.UserDTO.UserDTOBuilder builder, User user) {
+        return builder.withFirstName(user.getFirstName())
+                .withLastName(user.getLastName())
+                .withBirthday(user.getBirthday())
+                .withAddress(user.getAddress())
+                .build();
     }
 
 //    Director
