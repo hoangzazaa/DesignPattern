@@ -1,9 +1,6 @@
 package hoangnv.creational.builder.innerbuilder;
 
 import hoangnv.creational.builder.Address;
-import hoangnv.creational.builder.UserDTOBuilder;
-import hoangnv.creational.builder.UserWebDTO;
-
 import java.time.LocalDate;
 import java.time.Period;
 
